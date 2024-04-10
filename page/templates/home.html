@@ -9,6 +9,10 @@
         <link rel="stylesheet" href="">
         <title>home</title>
         <style>
+            body{
+                /*font-size: 1.6px;*/
+                background-color: #d3d3d3;
+            }
         
             .main-header-container{
                 background-color: #13141f;
@@ -33,6 +37,32 @@
             width: fit-content;
             margin: 0 auto;
           }
+          .search-conteiner{
+            padding: 30px;
+          }
+          .search-form{
+            border: 2px solid darkslategray;
+            max-width: 640px;
+            margin: 0 auto;
+            position: relative;
+
+          }
+          .search-input, .search-button{
+            border: none;
+            background: none;
+            outline: none;
+            padding: 10px;
+          }
+          .search-input{
+            width: 100%;
+            padding-right: 60px;
+          }
+
+
+          .search-button{
+            position: absolute;
+            right: 0;
+          }
          
         </style>
     </head>
@@ -40,13 +70,21 @@
         <header class="main-header-container">
             <div class="container">
                 <h1 class="main-text">Wine House</h1>
+                <a href="">Vinhos</a>
+                <a href="">Sobre nós</a>
+                <a href="">Login</a>
+                <a href="">Carrinho</a>
             </div>
 
         </header>
-        <!--[if lt IE 7]>
-            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
+        <div class="search-conteiner">
+            <form action="" class="search-form">
+                <input type="search" class="search-input" name="search">
+                <button type="submit" class="search-button">Enviar</button>
+            </form>
+        </div>
+
         
-        <script src="" async defer></script>
+        
     </body>
 </html>
